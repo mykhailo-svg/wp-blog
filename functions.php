@@ -64,6 +64,14 @@ if ( ! function_exists( 'hyring_enqueue_styles' ) ) :
 			get_parent_theme_file_path( $src )
 		);
 
+		// Enqueue Lato from Google Fonts
+		wp_enqueue_style(
+			'hyring-google-fonts',
+			'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap',
+			array(),
+			null
+		);
+
 		// Enqueue dedicated header stylesheet
 		wp_enqueue_style(
 			'hyring-header',
