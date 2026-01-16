@@ -11,7 +11,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since Twenty Twenty-Five 1.0
+ * @since Hyring 1.0
  */
 
 ?>
@@ -223,7 +223,7 @@
 		<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 		<div class="wp-block-group alignwide">
 			<!-- wp:paragraph {"fontSize":"small"} -->
-			<p class="has-small-font-size"><?php esc_html_e( 'Twenty Twenty-Five', 'hyring' ); ?></p>
+			<p class="has-small-font-size"><?php esc_html_e( 'Hyring', 'hyring' ); ?></p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"fontSize":"small"} -->
 			<p class="has-small-font-size"><?php esc_html_e( 'email@example.com', 'hyring' ); ?><br><?php echo esc_html_x( '+1 555 349 1806', 'Phone number.', 'hyring' ); ?></p>

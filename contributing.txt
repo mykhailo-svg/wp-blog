@@ -1,8 +1,8 @@
-=== Contributing to Twenty Twenty-Five ===
+=== Contributing to Hyring ===
 
 = Minifying CSS =
 
-Twenty Twenty-Five has a single stylesheet `style.css` which is enqueued in addition to the global styles coming from core. On a normal production site, when `SCRIPT_DEBUG` is disabled, then the minified version `style.min.css` will be enqueued instead. If you make a change to `style.css`, you'll need to re-minify the `style.min.css` using the built-in npm build tool. As always, it is preferable to use the Site Editor to supply Additional CSS instead of directly editing the theme stylesheet.
+Hyring has a single stylesheet `style.css` which is enqueued in addition to the global styles coming from core. On a normal production site, when `SCRIPT_DEBUG` is disabled, then the minified version `style.min.css` will be enqueued instead. If you make a change to `style.css`, you'll need to re-minify the `style.min.css` using the built-in npm build tool. As always, it is preferable to use the Site Editor to supply Additional CSS instead of directly editing the theme stylesheet.
 
 Installation instructions
 

@@ -1,12 +1,12 @@
 <?php
 /**
- * Twenty Twenty-Five functions and definitions.
+ * Hyring functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since Twenty Twenty-Five 1.0
+ * @since Hyring 1.0
  */
 
 // Adds theme support for post formats.
@@ -14,7 +14,7 @@ if ( ! function_exists( 'hyring_post_format_setup' ) ) :
 	/**
 	 * Adds theme support for post formats.
 	 *
-	 * @since Twenty Twenty-Five 1.0
+	 * @since Hyring 1.0
 	 *
 	 * @return void
 	 */
@@ -29,7 +29,7 @@ if ( ! function_exists( 'hyring_editor_style' ) ) :
 	/**
 	 * Enqueues editor-style.css in the editors.
 	 *
-	 * @since Twenty Twenty-Five 1.0
+	 * @since Hyring 1.0
 	 *
 	 * @return void
 	 */
@@ -44,7 +44,7 @@ if ( ! function_exists( 'hyring_enqueue_styles' ) ) :
 	/**
 	 * Enqueues the theme stylesheet on the front.
 	 *
-	 * @since Twenty Twenty-Five 1.0
+	 * @since Hyring 1.0
 	 *
 	 * @return void
 	 */
@@ -72,7 +72,7 @@ if ( ! function_exists( 'hyring_block_styles' ) ) :
 	/**
 	 * Registers custom block styles.
 	 *
-	 * @since Twenty Twenty-Five 1.0
+	 * @since Hyring 1.0
 	 *
 	 * @return void
 	 */
@@ -101,7 +101,7 @@ if ( ! function_exists( 'hyring_pattern_categories' ) ) :
 	/**
 	 * Registers pattern categories.
 	 *
-	 * @since Twenty Twenty-Five 1.0
+	 * @since Hyring 1.0
 	 *
 	 * @return void
 	 */
@@ -131,7 +131,7 @@ if ( ! function_exists( 'hyring_register_block_bindings' ) ) :
 	/**
 	 * Registers the post format block binding source.
 	 *
-	 * @since Twenty Twenty-Five 1.0
+	 * @since Hyring 1.0
 	 *
 	 * @return void
 	 */
@@ -152,7 +152,7 @@ if ( ! function_exists( 'hyring_format_binding' ) ) :
 	/**
 	 * Callback function for the post format name block binding source.
 	 *
-	 * @since Twenty Twenty-Five 1.0
+	 * @since Hyring 1.0
 	 *
 	 * @return string|void Post format name, or nothing if the format is 'standard'.
 	 */

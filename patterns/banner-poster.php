@@ -7,7 +7,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since Twenty Twenty-Five 1.0
+ * @since Hyring 1.0
  */
 
 ?>
