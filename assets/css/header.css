@@ -1,0 +1,16 @@
+.custom_header_content {
+  padding: 16px;
+}
+
+.custom_burger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.custom_burger-menu div {
+  width: 18px;
+  height: 2px;
+  background: #101828;
+}

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Title: Header
  * Slug: hyring/header
@@ -15,17 +16,22 @@
 <!-- wp:group {"align":"full","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull">
 	<!-- wp:group {"layout":{"type":"constrained"}} -->
-	<div class="wp-block-group">
+	<div class="wp-block-group custom_header_content">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
-		<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
-			<!-- wp:site-title {"level":0} /-->
-			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"right"}} -->
-			<div class="wp-block-group">
-				<!-- wp:navigation {"overlayBackgroundColor":"base","overlayTextColor":"contrast","layout":{"type":"flex","justifyContent":"right","flexWrap":"wrap"}} /-->
+		<div class="wp-block-group alignwide">
+			<!-- wp:image {"align":"left","sizeSlug":"full","linkDestination":"none"} -->
+			<figure class="wp-block-image alignleft size-full">
+				<img src="<?php echo esc_url(get_theme_file_uri('assets/images/hyring-logo.png')); ?>" alt="<?php esc_attr_e('Hyring logo', 'hyring'); ?>" />
+			</figure>
+			<!-- /wp:image -->
+			<div class="custom_burger-menu">
+				<div></div>
+				<div></div>
+				<div></div>
 			</div>
-			<!-- /wp:group -->
 		</div>
 		<!-- /wp:group -->
+
 	</div>
 	<!-- /wp:group -->
 </div>

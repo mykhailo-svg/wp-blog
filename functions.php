@@ -63,6 +63,19 @@ if ( ! function_exists( 'hyring_enqueue_styles' ) ) :
 			'path',
 			get_parent_theme_file_path( $src )
 		);
+
+		// Enqueue dedicated header stylesheet
+		wp_enqueue_style(
+			'hyring-header',
+			get_theme_file_uri( 'assets/css/header.css' ),
+			array( 'hyring-style' ),
+			wp_get_theme()->get( 'Version' )
+		);
+		wp_style_add_data(
+			'hyring-header',
+			'path',
+			get_theme_file_path( 'assets/css/header.css' )
+		);
 	}
 endif;
 add_action( 'wp_enqueue_scripts', 'hyring_enqueue_styles' );
