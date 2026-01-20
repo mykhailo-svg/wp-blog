@@ -18,3 +18,10 @@
 * {
   font-family: Lato;
 }
+
+* {
+  outline: none;
+}
+.custom_posts_feed div {
+  padding: 0px !important;
+}

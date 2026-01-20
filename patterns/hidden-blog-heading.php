@@ -16,7 +16,7 @@
 <div style="display:flex;justify-content:center;text-align:center">
     <div>
         <h1 style="font-size: 32px;font-weight:700;line-height:42px;margin-bottom:4px;color:#292E3D">Resource Center</h1>
-        <h4 style="margin: 0px; color:#667399;line-height:22px;font-weight:600;font-size:17px">Tools, insights, and inspiration about the world of work</h4>
+        <h4 style="margin: 0px; color:#667399;line-height:22px;font-weight:600;font-size:17px">Tools, insights, and inspiration<br/>about the world of work</h4>
     </div>
 </div>
 <!-- /wp:heading -->
