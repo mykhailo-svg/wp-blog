@@ -19,7 +19,7 @@
 	<h2 class="wp-block-heading alignwide has-small-font-size" style="font-style:normal;font-weight:700;letter-spacing:1.4px;text-transform:uppercase; font-size: 26px !important"><?php esc_html_e('Recommended articles', 'hyring'); ?></h2>
 	<!-- /wp:heading -->
 
-	<!-- wp:query {"query":{"perPage":4,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":null,"parents":[]},"align":"wide","style":{"spacing":{"margin":{"top":"16px"}}},"layout":{"type":"default"}} -->
+	<!-- wp:query {"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[<?php echo get_the_ID(); ?>],"sticky":"","inherit":false,"taxQuery":null,"parents":[]},"align":"wide","style":{"spacing":{"margin":{"top":"16px"}}},"layout":{"type":"default"}} -->
 	<div style="margin-top: 16px;" class="wp-block-query alignwide">
 		<!-- wp:post-template {"align":"full","style":{"spacing":{"blockGap":"32px"}},"layout":{"type":"default"}} -->
 
