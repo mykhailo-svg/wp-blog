@@ -26,11 +26,11 @@
 				</a>
 			</figure>
 			<!-- /wp:image -->
-			<div class="custom_burger-menu">
+			<!-- <div class="custom_burger-menu">
 				<div></div>
 				<div></div>
 				<div></div>
-			</div>
+			</div> -->
 		</div>
 		<!-- /wp:group -->
 
