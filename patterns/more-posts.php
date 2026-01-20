@@ -15,8 +15,8 @@
 ?>
 <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60); margin-top:32px; margin-bottom:32px;">
-	<!-- wp:heading {"align":"wide","style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"700","letterSpacing":"1.4px"}},"fontSize":"small"} -->
-	<h2 class="wp-block-heading alignwide has-small-font-size" style="font-style:normal;font-weight:700;letter-spacing:1.4px;text-transform:uppercase; font-size: 26px !important"><?php esc_html_e('Recommended articles', 'hyring'); ?></h2>
+	<!-- wp:heading {"align":"wide","style":{"typography":{"fontStyle":"normal","fontWeight":"700","letterSpacing":"1.4px"}},"fontSize":"small"} -->
+	<h2 class="wp-block-heading alignwide has-small-font-size" style="font-style:normal;font-weight:700;letter-spacing:1.4px; font-size: 26px !important"><?php esc_html_e('Recommended articles', 'hyring'); ?></h2>
 	<!-- /wp:heading -->
 
 	<!-- wp:query {"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[<?php echo get_the_ID(); ?>],"sticky":"","inherit":false,"taxQuery":null,"parents":[]},"align":"wide","style":{"spacing":{"margin":{"top":"16px"}}},"layout":{"type":"default"}} -->
