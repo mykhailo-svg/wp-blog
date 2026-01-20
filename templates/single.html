@@ -1,7 +1,7 @@
 <!-- wp:template-part {"slug":"header"} /-->
 
 <!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
-<main class="wp-block-group" style="margin-top: var(--wp--preset--spacing--60)">
+<main class="wp-block-group" style="margin-top: 9px !important">
   <style>
     html {
       scroll-behavior: smooth;
@@ -15,12 +15,55 @@
   <div
     class="wp-block-group alignfull"
     style="
-      padding-top: var(--wp--preset--spacing--60);
-      padding-bottom: var(--wp--preset--spacing--60);
+      margin-top: 0px !important;
+      color: #292e3d;
+      font-size: 17px;
+      line-height: 22px;
+      font-weight: 400;
     "
   >
-    <!-- wp:post-title {"level":1} /-->
-    <!-- wp:post-featured-image {"aspectRatio":"3/2"} /-->
+    <div style="max-width: 1340px; margin: 0 auto">
+      <a
+        style="
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          text-decoration: none;
+          color: #3d455c;
+          line-height: 22px;
+          font-size: 17px;
+          padding: 8px 0px;
+          margin-bottom: 16px;
+        "
+        href="/"
+        ><svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_40003710_152378)">
+            <rect width="24" height="24" fill="white" fill-opacity="0.01" />
+            <path
+              d="M13.4688 5.5011C13.75 5.18861 14.2188 5.1886 14.5312 5.5011C14.8125 5.78235 14.8125 6.2511 14.5312 6.53235L9.03125 12.0011L14.5 17.5011C14.793 17.7648 14.8112 18.1934 14.5547 18.4777L14.4453 18.587C14.1799 18.8266 13.7888 18.8265 13.5234 18.587L7.41406 12.4777C7.1575 12.1933 7.1757 11.7629 7.46875 11.4698L13.4688 5.5011Z"
+              fill="#3D455C"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_40003710_152378">
+              <rect width="24" height="24" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        <span>Resource Center</span></a
+      >
+    </div>
+
+    <!-- wp:post-date {"format":"F j, Y","style":{"spacing":{"margin":{"top":"8px"}},"typography":{"fontSize":"13px","lineHeight":"18px"},"color":{"text":"#848DAD"}}} /-->
+
+    <!-- wp:post-title {"level":1,"style":{"spacing":{"margin":{"top":"8px"}},"typography":{"fontWeight":"700","fontSize":"34px","lineHeight":"34px"},"color":{"text":"#292E3D"}}} /-->
+    <!-- wp:post-featured-image {"aspectRatio":"3/1.2","style":{"border":{"radius":"12px"},"spacing":{"margin":{"top":"16px"}}}} /-->
     <!-- wp:post-content {"align":"full","layout":{"type":"constrained"}} /-->
     <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
     <div
@@ -33,7 +76,6 @@
       <!-- wp:post-terms {"term":"post_tag","separator":"  ","className":"is-style-post-terms-1"} /-->
     </div>
     <!-- /wp:group -->
-
   </div>
   <!-- /wp:group -->
 
