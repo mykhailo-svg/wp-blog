@@ -21,6 +21,7 @@
 
 * {
   outline: none;
+  box-sizing: border-box;
 }
 .custom_posts_feed div {
   padding: 0px !important;
