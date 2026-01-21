@@ -84,6 +84,19 @@ if ( ! function_exists( 'hyring_enqueue_styles' ) ) :
 			'path',
 			get_theme_file_path( 'assets/css/header.css' )
 		);
+
+		// Enqueue taxonomy chips stylesheet
+		wp_enqueue_style(
+			'hyring-taxonomy-chips',
+			get_theme_file_uri( 'assets/css/taxonomy-chips.css' ),
+			array( 'hyring-style' ),
+			wp_get_theme()->get( 'Version' )
+		);
+		wp_style_add_data(
+			'hyring-taxonomy-chips',
+			'path',
+			get_theme_file_path( 'assets/css/taxonomy-chips.css' )
+		);
 	}
 endif;
 add_action( 'wp_enqueue_scripts', 'hyring_enqueue_styles' );

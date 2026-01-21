@@ -24,6 +24,12 @@
 		<!-- wp:post-template {"align":"full","style":{"spacing":{"blockGap":"32px"}},"layout":{"type":"default"}} -->
 
 		<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"3/1.2","style":{"border":{"radius":"12px"}}} /-->
+
+		<div id="taxonomy" style="gap: 8px; display: flex">
+			<!-- wp:post-terms {"term":"category","separator":" "} /-->
+			<!-- wp:post-terms {"term":"post_tag","separator":" "} /-->
+		</div>
+
 		<!-- wp:post-title {"isLink":true,"style":{"spacing":{"margin":{"top":"12px","bottom":"4px"}},"typography":{"fontSize":"36px","fontWeight":"700","lineHeight":"29px"},"color":{"text":"#292E3D"}}} /-->
 		<!-- wp:post-excerpt {"moreText":"","showMoreOnNewLine":false,"excerptLength":40,"style":{"spacing":{"margin":{"top":"4px"}},"typography":{"fontSize":"17px","lineHeight":"22px","fontWeight":"400"},"color":{"text":"#667399"}}} /-->
 

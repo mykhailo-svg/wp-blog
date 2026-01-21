@@ -21,10 +21,10 @@
       font-size: 17px;
       line-height: 22px;
       font-weight: 400;
-	  margin: 0px;
+      margin: 0px;
     "
   >
-    <div style="max-width: 1340px; margin: 0 auto">
+    <div style="max-width: 1340px; margin: 0 auto; padding-left: 16px">
       <a
         style="
           display: flex;
@@ -62,11 +62,18 @@
       >
     </div>
 
-    <!-- wp:post-date {"format":"F j, Y","style":{"spacing":{"margin":{"top":"8px"}},"typography":{"fontSize":"13px","lineHeight":"18px"},"color":{"text":"#848DAD"}}} /-->
+    <div style="padding: 0px 16px !important">
+      <div id="taxonomy" style="gap: 8px; display: flex">
+        <!-- wp:post-terms {"term":"category","separator":" "} /-->
+        <!-- wp:post-terms {"term":"post_tag","separator":" "} /-->
+      </div>
 
-    <!-- wp:post-title {"level":1,"style":{"spacing":{"margin":{"top":"8px"}},"typography":{"fontWeight":"700","fontSize":"34px","lineHeight":"34px"},"color":{"text":"#292E3D"}}} /-->
-    <!-- wp:post-featured-image {"aspectRatio":"3/1.2","style":{"border":{"radius":"12px"},"spacing":{"margin":{"top":"16px"}}}} /-->
-    <!-- wp:post-content /-->
+      <!-- wp:post-date {"format":"F j, Y","style":{"spacing":{"margin":{"top":"8px"}},"typography":{"fontSize":"13px","lineHeight":"18px"},"color":{"text":"#848DAD"}}} /-->
+
+      <!-- wp:post-title {"level":1,"style":{"spacing":{"margin":{"top":"8px"}},"typography":{"fontWeight":"700","fontSize":"34px","lineHeight":"34px"},"color":{"text":"#292E3D"}}} /-->
+      <!-- wp:post-featured-image {"aspectRatio":"3/1.2","style":{"border":{"radius":"12px"},"spacing":{"margin":{"top":"16px"}}}} /-->
+      <!-- wp:post-content /-->
+    </div>
   </div>
   <!-- /wp:group -->
 
@@ -89,6 +96,7 @@
         font-weight: 700;
         font-size: 26px;
         line-height: 34px;
+        text-align: center;
       "
     >
       Hire an expert on this topic
@@ -112,7 +120,9 @@
     >
   </div>
 
-  <!-- wp:pattern {"slug":"hyring/more-posts"} /-->
+  <div style="padding: 0px 16px !important">
+    <!-- wp:pattern {"slug":"hyring/more-posts"} /-->
+  </div>
 
   <!-- wp:pattern {"slug":"hyring/custom-cta-section"} /-->
 </main>
