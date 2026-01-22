@@ -14,8 +14,8 @@
 
 ?>
 <!-- wp:query {"query":{"perPage":200,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[]},"align":"full","layout":{"type":"default"}} -->
-<div class="wp-block-query alignfull custom_posts_feed" style="margin-top: 36px; padding-left:16px; padding-right:16px;">
-	<h1 style="font-size: 32px; font-weight: 700; line-height: 42px; color: #292E3D;">Latest Posts</h1>
+<div class="wp-block-query alignfull custom_posts_feed" style="margin-top: 36px; padding-left:16px; padding-right:16px; padding-bottom:40px; max-width:645px; margin: 0 auto">
+	<h1 style="font-size: 32px; font-weight: 700; line-height: 42px; color: #292E3D; margin-top: 50px">Latest Posts</h1>
 	<!-- wp:post-template {"align":"full","style":{"spacing":{"blockGap":"32px","margin":{"top":"16px"}}},"layout":{"type":"default"}} -->
 	<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 	<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">

@@ -10,6 +10,16 @@
     main {
       padding: 0px !important;
     }
+    body > div {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+    }
   </style>
   <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
   <div
@@ -120,7 +130,7 @@
     >
   </div>
 
-  <div style="padding: 0px 16px !important">
+  <div style="padding: 0px 16px !important; flex: 1 1 auto">
     <!-- wp:pattern {"slug":"hyring/more-posts"} /-->
   </div>
 
