@@ -13,7 +13,7 @@
  */
 
 ?>
-<!-- wp:query {"query":{"perPage":200,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[]},"align":"full","layout":{"type":"default"}} -->
+<!-- wp:query {"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":null,"parents":[]},"align":"full","layout":{"type":"default"}} -->
 <div class="wp-block-query alignfull custom_posts_feed" style="margin-top: 36px; padding-left:16px; padding-right:16px; padding-bottom:40px; max-width:645px; margin: 0 auto">
 	<h1 style="font-size: 32px; font-weight: 700; line-height: 42px; color: #292E3D; margin-top: 50px">Latest Posts</h1>
 	<!-- wp:post-template {"align":"full","style":{"spacing":{"blockGap":"32px","margin":{"top":"16px"}}},"layout":{"type":"default"}} -->
@@ -31,22 +31,22 @@
 	</div>
 	<!-- /wp:group -->
 	<!-- /wp:post-template -->
+
+	<!-- wp:query-pagination {"paginationArrow":"arrow","align":"wide","style":{"spacing":{"margin":{"top":"32px"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
+	<div class="wp-block-query-pagination alignwide" style="margin-top:32px">
+		<!-- wp:query-pagination-previous {"label":"Previous"} /-->
+		<!-- wp:query-pagination-numbers /-->
+		<!-- wp:query-pagination-next {"label":"Next"} /-->
+	</div>
+	<!-- /wp:query-pagination -->
+
 	<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
-	<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+	<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);display:none">
 		<!-- wp:query-no-results -->
 		<!-- wp:paragraph -->
 		<p><?php echo esc_html_x('Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'hyring'); ?></p>
 		<!-- /wp:paragraph -->
 		<!-- /wp:query-no-results -->
-	</div>
-	<!-- /wp:group -->
-	<!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
-	<div class="wp-block-group alignwide">
-		<!-- wp:query-pagination {"paginationArrow":"arrow","align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
-		<!-- wp:query-pagination-previous /-->
-		<!-- wp:query-pagination-numbers /-->
-		<!-- wp:query-pagination-next /-->
-		<!-- /wp:query-pagination -->
 	</div>
 	<!-- /wp:group -->
 </div>
