@@ -10,8 +10,6 @@
  * @subpackage Hyring
  * @since Hyring 1.0
  */
-
-$bg_image_url = esc_url(get_theme_file_uri('assets/images/start_hiring_bg.jpg'));
 ?>
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 <div id="download_links" style="padding:38px 10px !important;min-height:432px; gap:0px !important;width:100%;max-width:100%;background: url('<?php echo esc_url(get_theme_file_uri('assets/images/start_hiring_bg.jpg')); ?>') no-repeat bottom center;
@@ -19,24 +17,28 @@ background-size: cover; display: flex; flex-direction:column; align-items:center
 
 
   <style>
-    #download_links {
-      position: relative;
-    }
-    #download_links::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.7);
-      z-index: 0;
-    }
-    #download_links > * {
-      position: relative;
-      z-index: 1;
-    }
     @media (min-width: 676px) {
+      #download_links {
+        position: relative;
+      }
+
+      #download_links::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(4px);
+        z-index: 0;
+      }
+
+      #download_links>* {
+        position: relative;
+        z-index: 1;
+      }
+
       #download_links {
         background-position-y: center !important;
       }
