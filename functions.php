@@ -185,3 +185,17 @@ if ( ! function_exists( 'hyring_format_binding' ) ) :
 		}
 	}
 endif;
+
+/**
+ * Set up blog permalink structure
+ * Posts page: /blog
+ * Single posts: /blog/{post-name}
+ *
+ * @since Hyring 1.0
+ */
+function hyring_setup_blog_permalinks() {
+	// This will be configured in WordPress Settings > Reading
+	// Set "Posts page" to a page with slug "blog"
+	// Then set Settings > Permalinks to Custom Structure: /blog/%postname%/
+}
+add_action( 'init', 'hyring_setup_blog_permalinks' );

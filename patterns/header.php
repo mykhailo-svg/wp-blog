@@ -21,7 +21,7 @@
 		<div class="wp-block-group alignwide">
 			<!-- wp:image {"align":"left","sizeSlug":"full","linkDestination":"none"} -->
 			<figure class="wp-block-image alignleft size-full">
-				<a class="site-logo-link" href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+				<a class="site-logo-link" href="<?php echo esc_url(get_permalink(get_option('page_for_posts'))); ?>" rel="home">
 					<img src="<?php echo esc_url(get_theme_file_uri('assets/images/hyring-logo.png')); ?>" alt="<?php esc_attr_e('Hyring logo', 'hyring'); ?>" />
 				</a>
 			</figure>
