@@ -87,16 +87,17 @@
   function renderCategories(container, categories) {
     let categoriesHTML = `
             <li class="cat-item cat-item-all ${!selectedCategory ? "active" : ""}">
-                <a href="#" data-category="">All Posts</a>
+                <a href="#" data-category="">All</a>
             </li>
         `;
 
-    categories.forEach((cat) => {
+    // Show only first 2 categories
+    const topCategories = categories.slice(0, 3);
+    topCategories.forEach((cat) => {
       categoriesHTML += `
                 <li class="cat-item cat-item-${cat.id} ${selectedCategory == cat.id ? "active" : ""}">
                     <a href="#" data-category="${cat.id}">
                         ${escapeHtml(cat.name)}
-                        <span class="post-count">(${cat.count})</span>
                     </a>
                 </li>
             `;
