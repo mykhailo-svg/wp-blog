@@ -3,6 +3,51 @@
  * Styling for JavaScript-rendered posts and filters
  */
 
+/* Custom search input */
+.custom-search-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.blog-search-input {
+  width: 100%;
+  padding: 12px 48px 12px 16px;
+  font-size: 16px;
+  border: 1px solid #e1e5ed;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease;
+  font-family: inherit;
+}
+
+.blog-search-input:focus {
+  border-color: transparent;
+}
+
+.blog-search-input::placeholder {
+  color: #858dad;
+  opacity: 0.7;
+}
+
+.blog-search-button {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+}
+
+.blog-search-button svg {
+  display: block;
+}
+
 /* Category filters */
 .wp-block-categories-list .cat-item {
   display: inline-block;

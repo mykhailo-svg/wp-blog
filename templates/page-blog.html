@@ -12,7 +12,59 @@
     class="wp-block-group has-base-background-color has-background"
     style="border-radius: 12px; margin-top: 16px; margin-bottom: 24px"
   >
-    <!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search posts...","width":100,"widthUnit":"%","buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true,"style":{"border":{"radius":"8px"},"typography":{"fontSize":"16px"}}} /-->
+    <!-- wp:html -->
+    <div class="custom-search-wrapper" style="position: relative; width: 100%">
+      <div
+        class="blog-search-button"
+        style="
+          position: absolute;
+          left: 2px;
+          top: 50%;
+          transform: translateY(-50%);
+          background: transparent;
+          border: none;
+          padding: 8px;
+          display: flex;
+          pointer-events: none;
+          align-items: center;
+          justify-content: flex-start;
+        "
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM19 19l-4.35-4.35"
+            stroke="#667399"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+
+      <input
+        type="text"
+        id="blog-search-input"
+        class="blog-search-input"
+        placeholder="Search posts..."
+        style="
+          width: 100%;
+          padding: 9px 16px 9px 33px;
+          font-size: 16px;
+          background: #e0e3eb;
+          border-radius: 8px;
+          outline: none;
+          color: #858dad;
+          transition: border-color 0.2s ease;
+        "
+      />
+    </div>
+    <!-- /wp:html -->
 
     <!-- wp:group {"style":{"spacing":{"margin":{"top":"16px"},"blockGap":"12px"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"left"}} -->
     <div class="wp-block-group" style="margin-top: 24px">

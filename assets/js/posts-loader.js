@@ -34,15 +34,16 @@
    * Initialize search functionality
    */
   function initSearch() {
-    const searchForm = document.querySelector(".wp-block-search");
-    const searchInput = document.querySelector(".wp-block-search__input");
+    const searchInput = document.getElementById("blog-search-input");
 
-    if (searchForm && searchInput) {
-      searchForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        searchQuery = searchInput.value.trim();
-        currentPage = 1;
-        loadPosts(1);
+    if (searchInput) {
+      // Search on Enter key
+      searchInput.addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+          searchQuery = searchInput.value.trim();
+          currentPage = 1;
+          loadPosts(1);
+        }
       });
 
       // Search on input with debounce
