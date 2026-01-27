@@ -6,7 +6,63 @@
   style="margin-top: 0px; padding-right: 16px; padding-left: 16px"
 >
   <!-- wp:pattern {"slug":"hyring/hidden-blog-heading"} /-->
-  <!-- wp:pattern {"slug":"hyring/template-query-loop"} /-->
+
+  <!-- wp:group {"style":{"spacing":{"padding":{"top":"20px","bottom":"20px","left":"16px","right":"16px"},"margin":{"top":"0","bottom":"32px"}},"border":{"radius":"12px"}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
+  <div
+    class="wp-block-group has-base-background-color has-background"
+    style="
+      border-radius: 12px;
+      margin-top: 0;
+      margin-bottom: 32px;
+      padding-top: 20px;
+      padding-right: 16px;
+      padding-bottom: 20px;
+      padding-left: 16px;
+    "
+  >
+    <!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search posts...","width":100,"widthUnit":"%","buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true,"style":{"border":{"radius":"8px"},"typography":{"fontSize":"16px"}}} /-->
+    
+    <!-- wp:group {"style":{"spacing":{"margin":{"top":"16px"},"blockGap":"12px"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"left"}} -->
+    <div class="wp-block-group" style="margin-top:16px">
+      <!-- wp:paragraph {"style":{"typography":{"fontSize":"14px","fontWeight":"600"}}} -->
+      <p style="font-size:14px;font-weight:600">Filter by:</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:html -->
+      <ul class="wp-block-categories-list" style="list-style: none; padding: 0; margin: 0; display: flex; gap: 8px; flex-wrap: wrap;">
+        <!-- Categories will be loaded by JavaScript -->
+      </ul>
+      <!-- /wp:html -->
+    </div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:html -->
+  <div class="wp-block-query alignfull custom_posts_feed" style="margin-top: 36px; padding-left:16px; padding-right:16px; padding-bottom:40px; max-width:645px; margin: 0 auto">
+    <h1 style="font-size: 32px; font-weight: 700; line-height: 42px; color: #292E3D; margin-top: 50px">Latest Posts</h1>
+    
+    <!-- Loading indicator -->
+    <div id="posts-loading" style="padding-top:var(--wp--preset--spacing--60);text-align:center;">
+      <p>Loading posts...</p>
+    </div>
+    
+    <!-- Posts container -->
+    <div id="posts-container" style="display:none; margin-top: 16px;">
+      <!-- Posts will be rendered here by JavaScript -->
+    </div>
+
+    <!-- Pagination container -->
+    <div id="posts-pagination" class="wp-block-query-pagination alignwide" style="margin-top:32px;display:none;">
+      <!-- Pagination will be rendered here by JavaScript -->
+    </div>
+
+    <!-- No results message -->
+    <div id="posts-no-results" class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);display:none">
+      <p>Sorry, but nothing was found. Please try a search with different keywords.</p>
+    </div>
+  </div>
+  <!-- /wp:html -->
 </main>
 <!-- /wp:group -->
 

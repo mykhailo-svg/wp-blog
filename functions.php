@@ -84,6 +84,23 @@ if ( ! function_exists( 'hyring_enqueue_styles' ) ) :
 			'path',
 			get_theme_file_path( 'assets/css/header.css' )
 		);
+
+		// Enqueue posts loader stylesheet
+		wp_enqueue_style(
+			'hyring-posts-loader',
+			get_theme_file_uri( 'assets/css/posts-loader.css' ),
+			array( 'hyring-style' ),
+			wp_get_theme()->get( 'Version' )
+		);
+
+		// Enqueue posts loader script
+		wp_enqueue_script(
+			'hyring-posts-loader',
+			get_theme_file_uri( 'assets/js/posts-loader.js' ),
+			array(),
+			wp_get_theme()->get( 'Version' ),
+			true
+		);
 	}
 endif;
 add_action( 'wp_enqueue_scripts', 'hyring_enqueue_styles' );

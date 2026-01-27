@@ -1,0 +1,136 @@
+/**
+ * Posts Loader Styles
+ * Styling for JavaScript-rendered posts and filters
+ */
+
+/* Category filters */
+.wp-block-categories-list .cat-item {
+    display: inline-block;
+}
+
+.wp-block-categories-list .cat-item a {
+    display: inline-block;
+    padding: 6px 14px;
+    background: #f0f2f7;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #667399;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.wp-block-categories-list .cat-item a:hover {
+    background: #e1e5ed;
+    color: #292E3D;
+}
+
+.wp-block-categories-list .cat-item.active a {
+    background: #292E3D;
+    color: white;
+    font-weight: 600;
+}
+
+.wp-block-categories-list .post-count {
+    font-size: 12px;
+    opacity: 0.8;
+    margin-left: 4px;
+}
+
+/* Post terms styling */
+.wp-block-post-terms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.wp-block-post-terms__term {
+    display: inline-block;
+}
+
+.wp-block-post-terms__term a {
+    padding: 4px 12px;
+    background: #f0f2f7;
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #667399;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.wp-block-post-terms__term a:hover {
+    background: #e1e5ed;
+    color: #292E3D;
+}
+
+/* Post title styling */
+.wp-block-post-title a {
+    color: #292E3D;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.wp-block-post-title a:hover {
+    color: #667399;
+}
+
+/* Pagination styling */
+.wp-block-query-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.wp-block-query-pagination a,
+.wp-block-query-pagination .page-numbers {
+    color: #292E3D;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.wp-block-query-pagination a:hover {
+    background: #f0f2f7;
+}
+
+.wp-block-query-pagination .page-numbers.current {
+    background: #292E3D;
+    color: white;
+}
+
+/* Loading state */
+#posts-loading {
+    text-align: center;
+    padding: 40px 0;
+    color: #667399;
+}
+
+/* Featured image */
+.wp-block-post-featured-image {
+    margin: 0 0 16px 0;
+}
+
+.wp-block-post-featured-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Post excerpt */
+.wp-block-post-excerpt {
+    margin-top: 4px;
+}
+
+.wp-block-post-excerpt__excerpt {
+    margin: 0;
+}
+
+/* No results */
+#posts-no-results {
+    text-align: center;
+    color: #667399;
+}
